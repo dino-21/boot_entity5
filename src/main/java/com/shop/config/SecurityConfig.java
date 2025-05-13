@@ -28,7 +28,7 @@ public class SecurityConfig {
                 // 로그인 설정
                 .formLogin(form -> form
                         .loginPage("/members/login")              // 로그인 페이지 URL을 설정한다.
-                        .defaultSuccessUrl("/members/")           // 로그인 성공 시 이동할 URL을 설정한다.
+                        .defaultSuccessUrl("/", true)           // 로그인 성공 시 이동할 URL을 설정한다.
                         .usernameParameter("email")               // 로그인 시 사용할 파라미터 이름으로 email을 지정한다.
                         .failureUrl("/members/login/error")       // 로그인 실패 시 이동할 URL을 설정한다.
                 )
