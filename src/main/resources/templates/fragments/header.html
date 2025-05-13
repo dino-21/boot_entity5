@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<th:block th:fragment="header"
+          xmlns:th="http://www.thymeleaf.org"
+          xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
-<div th:fragment="header">
     <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
@@ -38,6 +37,4 @@
             </form>
         </div>
     </nav>
-</div>
-
-</html>
+</th:block>
